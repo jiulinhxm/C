@@ -23,4 +23,6 @@ int main()
     {
        printf("%d,%d\n",i,*(pn+i));
     }
+
+    free(p);
 }
