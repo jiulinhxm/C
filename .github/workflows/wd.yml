@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: npm install
         run: npm install write-good
-      - run: write-good *.md
+      - run: write-good $(ls *.md)

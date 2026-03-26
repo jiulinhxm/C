@@ -3,3 +3,22 @@
 1.生成一个 .github/workflow/action.yml文件
 
 > > yml简单，确实DevOpt的灵魂文件
+
+```yml
+name: 尝试使用action
+on: push #触发的事件
+
+permissions: {}
+
+jobs:
+  job1: #并列执行
+    runs-on: ubuntu-latest
+    steps: #依次执行
+      - run: pwd
+      - run: ls
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: node-v
+        run: node --version
+```
