@@ -4,9 +4,13 @@ on: push
 permissions: {}
 
 jobs:
-  job1:
+  write-good:
     runs-on: ubuntu-latest
     steps:
-      - name: npm install
-        run: npm install write-good
-      - run: write-good $(ls *.md)
+      - name: read path
+        uses: actions/checkout@v4
+        
+      - run: npm install -g write-good
+      - run: npm install glob
+  
+      - run: write-good test.md
