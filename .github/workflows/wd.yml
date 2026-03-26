@@ -7,6 +7,9 @@ jobs:
   write-good:
     runs-on: ubuntu-latest
     steps:
+      - name: read path
+        use: actions/checkout@v4
+        
       - run: npm install -g write-good
       - run: npm install glob
   
