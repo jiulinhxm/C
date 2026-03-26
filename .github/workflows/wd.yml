@@ -1,0 +1,12 @@
+name: write good
+on: push
+
+permissions: {}
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: npm install
+        run: npm install write-good
+      - run: write-good *.md
