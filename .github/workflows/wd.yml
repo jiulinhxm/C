@@ -4,9 +4,8 @@ on: push
 permissions: {}
 
 jobs:
-  job1:
+  write-good:
     runs-on: ubuntu-latest
     steps:
-      - name: npm install
-        run: npm install write-good
-      - run: write-good *.md
+      - run: npm install -g write-good
+      - run: write-good *.md --weasel --so
