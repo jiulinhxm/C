@@ -1,8 +1,7 @@
 name: 尝试使用action
 on: push
 
-permissons:
-  contents: write
+permissions: {}
 
 jobs:
   check-ls:
