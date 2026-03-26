@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install -g write-good
-      - run: write-good *.md --weasel --so
+      - run: write-good ../../*.md --weasel --so
