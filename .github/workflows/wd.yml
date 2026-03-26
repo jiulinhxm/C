@@ -10,4 +10,4 @@ jobs:
       - run: npm install -g write-good
       - run: npm install glob
   
-      - run: write-good $(test.md)
+      - run: write-good test.md
