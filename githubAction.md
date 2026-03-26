@@ -2,7 +2,7 @@
 
 1.生成一个 .github/workflow/action.yml文件
 
-> > yml简单，确实DevOpt的灵魂文件
+>yml简单，确实DevOpt的灵魂文件
 
 ```yml
 name: 尝试使用action
