@@ -1,16 +1,1 @@
-name: write good
-on: push
 
-permissions: {}
-
-jobs:
-  write-good:
-    runs-on: ubuntu-latest
-    steps:
-      - name: read path
-        uses: actions/checkout@v4
-        
-      - run: npm install -g write-good
-      - run: npm install glob
-  
-      - run: write-good test.md
